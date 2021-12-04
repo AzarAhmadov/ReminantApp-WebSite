@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="56px" viewBox="0 0 1440 56" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Waves/wave-top</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Waves/wave-top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1440,0.0100756918 L1440,37.3936566 L0,37.3936566 L0,0.802771506 C115.88527,0.307692596 229.081162,33.3936566 655.578314,33.3936566 C1082.07547,33.3936566 1250.37725,-0.67090601 1440,0.0100756918 Z" id="wave" fill="#FFFFFF" opacity="0.5" transform="translate(720.000000, 18.696828) scale(-1, -1) translate(-720.000000, -18.696828) "></path>
+        <path d="M1440,0.00505182912 L1440,55.3886327 L0,55.3886327 L0,5.79774764 C106.226448,5.34393264 313.375622,55.3886327 623.178314,55.3886327 C932.981007,55.3886327 1268.35502,-0.611367302 1440,0.00505182912 Z" id="wave" fill="#FFFFFF" opacity="0.25" transform="translate(720.000000, 27.694316) scale(-1, -1) translate(-720.000000, -27.694316) "></path>
+        <path d="M1440,0.0341359622 L1440,24.4177168 L0,24.4177168 L0,3.82683178 C95.7633114,3.41771683 278.134957,24.4177168 578.778314,24.4177168 C879.421672,24.4177168 1135.89541,-1.05797801 1440,0.0341359622 L1440,0.0341359622 Z" id="base" fill="#FFFFFF" transform="translate(720.000000, 12.208858) scale(-1, -1) translate(-720.000000, -12.208858) "></path>
+    </g>
+</svg>

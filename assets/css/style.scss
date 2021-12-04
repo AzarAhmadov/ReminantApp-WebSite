@@ -17,10 +17,10 @@ $spanColor:#1f2a82;
 $spanBack:#dbe2fc;
 $h2Color:#30364d;
 $linkCOlor:#182553;
+$backColor:#e6e8f0;
 $appBack:#e6e8f0;
 $rightContent:#798099;
 $h2two:#0f1340;
-$backColor:#e6e8f0;
 $darkOrange:darkorange;
 $linearback:linear-gradient(357deg, #0f1340 52%, #1f2a82);
 $bLeft:rgba(255, 255, 255, .4);
@@ -163,7 +163,6 @@ html {
                     }
                 }
             }
-
             .bg-elements {
                 background-image: $linearback;
                 position: absolute;
@@ -179,7 +178,7 @@ html {
                     bottom: -4px;
                     width: 100%;
 
-                    img {
+                    svg {
                         height: 100%;
                         width: 100%;
                     }
@@ -252,7 +251,6 @@ html {
 
             #reklam {
                 margin-top: 150px;
-
                 .container {
                     .title {
                         margin: 0 auto;
