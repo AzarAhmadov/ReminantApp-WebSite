@@ -510,7 +510,7 @@ html body main #card {
   position: relative;
   margin-top: 100px;
   background-color: #e6e8f0;
-  background-image: linear-gradient(357deg, #0f1340, #0f1340 49%, #1f2a82);
+  background-image: linear-gradient(357deg, #0f1340 52%, #1f2a82);
   z-index: -1;
   padding-top: 50px;
   padding-bottom: 100px;

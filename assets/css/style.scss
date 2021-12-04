@@ -16,6 +16,17 @@ $black:#000;
 $spanColor:#1f2a82;
 $spanBack:#dbe2fc;
 $h2Color:#30364d;
+$linkCOlor:#182553;
+$appBack:#e6e8f0;
+$rightContent:#798099;
+$h2two:#0f1340;
+$backColor:#e6e8f0;
+$darkOrange:darkorange;
+$linearback:linear-gradient(357deg, #0f1340 52%, #1f2a82);
+$bLeft:rgba(255, 255, 255, .4);
+$hoverAcardion:rgba(128, 0, 128, 0);
+$emerBtn:rgba(15, 19, 64, .05);
+$boxShadow:rgba(0, 0, 0, 0.1);
 
 .span {
     font-weight: bold;
@@ -37,7 +48,7 @@ $h2Color:#30364d;
 
 .open-btn {
     font-size: 26px;
-    color: #fff;
+    color: $white;
     margin-left: 10px;
     display: none;
 }
@@ -48,7 +59,7 @@ $h2Color:#30364d;
     padding: 0 10px;
 }
 
-#body.active{
+#body.active {
     overflow: hidden !important;
 }
 
@@ -114,15 +125,15 @@ html {
         }
 
         main {
-            .mobil-menu{
-                .mobil-container{
-                    nav{
-                        ul{
+            .mobil-menu {
+                .mobil-container {
+                    nav {
+                        ul {
                             position: fixed;
                             top: 90px;
                             left: -100%;
                             height: calc(100vh - 10px);
-                            background-color: #fff;
+                            background-color: $white;
                             z-index: 1000;
                             display: flex;
                             align-items: flex-start;
@@ -131,14 +142,17 @@ html {
                             flex-direction: column;
                             transition: 350ms ease;
                             padding-left: 25px;
-                            &.active{
+
+                            &.active {
                                 left: 0;
                             }
-                            li{
+
+                            li {
                                 margin-bottom: 40px;
                                 width: 90%;
-                                a{
-                                    color: #182553;
+
+                                a {
+                                    color: $linkCOlor;
                                     font-size: 22px;
                                     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
                                     padding-bottom: 10px;
@@ -149,9 +163,9 @@ html {
                     }
                 }
             }
-    
+
             .bg-elements {
-                background-image: linear-gradient(357deg, #0f1340 52%, #1f2a82);
+                background-image: $linearback;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -188,7 +202,7 @@ html {
                                 margin-top: 30px;
                                 margin-bottom: 15px;
                                 font-weight: bolder;
-                                background: rgba(255, 255, 255, .4);
+                                background: $bLeft;
                                 font-size: 17px;
                                 line-height: 16px;
                                 font-weight: 500;
@@ -226,7 +240,7 @@ html {
                             justify-content: flex-end;
 
                             .img {
-                                background: #000;
+                                background: $black;
                                 width: 600px;
                                 height: 400px;
                             }
@@ -247,8 +261,8 @@ html {
                         margin-bottom: 15px;
                         padding: 4px 7px 4px 8px;
                         border-radius: 4px;
-                        background-color: #dbe2fc;
-                        color: #1f2a82;
+                        background-color: $spanBack;
+                        color: $spanColor;
                         font-size: 11px;
                         line-height: 16px;
                         font-weight: 500;
@@ -284,7 +298,7 @@ html {
             #app {
                 position: relative;
                 margin-top: 40px;
-                background-color: #e6e8f0;
+                background-color: $appBack;
 
                 .container {
                     .row {
@@ -310,7 +324,7 @@ html {
             }
 
             #acardion {
-                background-color: #e6e8f0;
+                background-color: $appBack;
                 padding-top: 100px;
                 padding-bottom: 100px;
 
@@ -332,8 +346,8 @@ html {
                     display: flex;
                     align-items: center;
 
-                    .left-item{
-                        
+                    .left-item {
+
                         img {
                             width: 460px;
                         }
@@ -347,12 +361,13 @@ html {
                             padding: 30px;
                             width: 100%;
                             border-radius: 10px;
-                            &:hover{
-                                background: rgba(128, 0, 128, 0);
+
+                            &:hover {
+                                background: $hoverAcardion;
                             }
 
                             &.active {
-                                background: #fff;
+                                background: $white;
                             }
 
                             .right-title,
@@ -366,7 +381,7 @@ html {
                             }
 
                             .right-content {
-                                color: #798099;
+                                color: $rightContent;
                                 font-size: 19px;
                                 font-weight: 400;
                             }
@@ -377,8 +392,8 @@ html {
                                 left: 20px;
                                 font-size: 35px;
                                 border-radius: 50%;
-                                background: #1f2a82;
-                                color: #fff;
+                                background: $spanColor;
+                                color: $white;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -415,13 +430,13 @@ html {
 
                             h2 {
                                 font-size: 33px;
-                                color: #0f1340;
+                                color: $h2two;
                                 margin-bottom: 40px;
                             }
 
                             .emer-content {
                                 width: 85%;
-                                color: #798099;
+                                color: $rightContent;
                                 font-size: 19px;
                                 line-height: 32px;
                             }
@@ -433,7 +448,7 @@ html {
 
                             .emer-btn {
                                 margin-top: 20px;
-                                background-color: rgba(15, 19, 64, .05);
+                                background-color: $emerBtn;
                                 height: 48px;
                                 padding: 5px 40px;
                                 display: flex;
@@ -462,15 +477,15 @@ html {
                 width: 100%;
                 position: relative;
                 margin-top: 100px;
-                background-color: #e6e8f0;
-                background-image: linear-gradient(357deg, #0f1340, #0f1340 49%, #1f2a82);
+                background-color: $backColor;
+                background-image: $linearback;
                 z-index: -1;
                 padding-top: 50px;
                 padding-bottom: 100px;
 
                 h5 {
                     text-align: center;
-                    color: #fff;
+                    color: $white;
                     font-weight: bold;
                     font-size: 35px;
                 }
@@ -488,7 +503,7 @@ html {
 
                                 i {
                                     margin-right: 20px;
-                                    color: #000;
+                                    color: $black;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
@@ -496,11 +511,11 @@ html {
                                     height: 55px;
                                     border-radius: 50%;
                                     font-size: 35px;
-                                    background: #fff;
+                                    background: $white;
                                 }
 
                                 h6 {
-                                    color: #fff;
+                                    color: $white;
                                     font-weight: bold;
                                     font-size: 20px;
                                 }
@@ -509,7 +524,7 @@ html {
                                     margin-top: 15px;
                                     line-height: 25px;
                                     font-size: 17px;
-                                    color: #fff;
+                                    color: $white;
                                     opacity: 0.7;
                                 }
                             }
@@ -574,19 +589,19 @@ html {
                             border-radius: 10px;
                             width: 400px;
                             height: auto;
-                            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-                            background: #fff;
+                            box-shadow: 0 0 20px 0 $boxShadow;
+                            background: $white;
 
                             p {
                                 padding-left: 20px;
                                 padding-right: 20px;
                                 margin: 30px 30px 25px;
-                                color: #798099;
+                                color: $rightContent;
                                 font-size: 17px;
                             }
 
                             .coment-flex {
-                                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                                border-top: 1px solid $boxShadow;
                                 display: flex;
                                 align-items: center;
                                 padding-left: 23px;
@@ -599,8 +614,8 @@ html {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    background: #798099;
-                                    color: #fff;
+                                    background: $rightContent;
+                                    color: $white;
                                     margin-right: 15px;
                                 }
 
@@ -615,7 +630,7 @@ html {
                                     }
 
                                     .name {
-                                        color: #000;
+                                        color: $black;
                                         font-weight: bold;
                                     }
 
@@ -630,7 +645,7 @@ html {
                                     margin-left: 80px;
 
                                     i {
-                                        color: darkorange;
+                                        color: $darkOrange;
                                     }
                                 }
                             }
@@ -644,7 +659,7 @@ html {
                 margin-top: 100px;
                 padding: 120px 0;
                 width: 100%;
-                background-image: linear-gradient(357deg, #0f1340 52%, #1f2a82);
+                background-image: $linearback;
 
                 .container {
                     .row {
@@ -654,14 +669,14 @@ html {
                         align-items: center;
 
                         span {
-                            color: #fff;
+                            color: $white;
                             font-size: 30px;
                         }
 
                         .p1,
                         .p2 {
                             margin: 13px 0;
-                            color: #fff;
+                            color: $white;
                         }
 
                         .p1 {
@@ -707,7 +722,7 @@ html {
 
                     .left {
                         a {
-                            color: #000;
+                            color: $black;
                             font-size: 30px;
                         }
                     }
@@ -728,7 +743,7 @@ html {
                     justify-content: space-between;
 
                     .footer-item {
-                        color: #000;
+                        color: $black;
 
                         p {
                             margin-bottom: 20px;
@@ -737,7 +752,7 @@ html {
 
                         .btn-flex {
                             i {
-                                border: 1px solid #000;
+                                border: 1px solid $black;
                                 font-size: 20px;
                                 padding: 5px;
                                 margin-right: 5px;
@@ -748,7 +763,7 @@ html {
 
                     .footer-list {
                         .footer-title {
-                            color: #000;
+                            color: $black;
                             font-size: 20px;
                             margin-bottom: 25px;
                         }
@@ -759,7 +774,7 @@ html {
 
                                 a {
                                     font-weight: bold;
-                                    color: #000;
+                                    color: $black;
                                 }
                             }
                         }
@@ -789,7 +804,8 @@ html {
             main {
                 .bg-elements {
                     min-height: 880px;
-                }    
+                }
+
                 #banner {
                     .container {
                         .row {
@@ -798,55 +814,63 @@ html {
                             .banner-left {
                                 width: 100%;
                             }
-                            .banner-right{
+
+                            .banner-right {
                                 margin-top: 20px;
                                 width: 100%;
-                .img{
-                    height:350px;
-                    width:100%;
-                }
+
+                                .img {
+                                    height: 350px;
+                                    width: 100%;
+                                }
                             }
 
                         }
                     }
                 }
-                #acardion{
-                    .row{
+
+                #acardion {
+                    .row {
                         flex-direction: column;
-                        .right-item{
-                        order: -1;
+
+                        .right-item {
+                            order: -1;
                         }
                     }
                 }
 
-                #emergency{
-                       .container{
-                        .row{
-                            grid-template-columns:1fr;
-                            .emer-right{
+                #emergency {
+                    .container {
+                        .row {
+                            grid-template-columns: 1fr;
+
+                            .emer-right {
                                 margin-top: 40px;
                                 justify-content: flex-start;
                             }
                         }
-                       }
+                    }
                 }
+
                 #card {
-                    .container{
-                       .row{
-                        .card-grid{
-                            grid-template-columns: 1fr;
-                            grid-template-rows: auto;
-                        .card-flex{
-                           margin-top: 30px;
-                           width: 100%;
-                           p{
-                               br{
-                                   display: none;
-                               }
-                           }
+                    .container {
+                        .row {
+                            .card-grid {
+                                grid-template-columns: 1fr;
+                                grid-template-rows: auto;
+
+                                .card-flex {
+                                    margin-top: 30px;
+                                    width: 100%;
+
+                                    p {
+                                        br {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        }
-                       }
                     }
                 }
             }
@@ -865,144 +889,170 @@ html {
                     align-items: center;
                 }
             }
-            #footer{
-                .container{
-                    .row2{
+
+            #footer {
+                .container {
+                    .row2 {
                         padding-right: 0;
-                       flex-direction: column !important;
-                       .footer-list{
-                           margin-top: 25px;
-                       }
+                        flex-direction: column !important;
+
+                        .footer-list {
+                            margin-top: 25px;
+                        }
                     }
                 }
             }
         }
-        @media only screen and (max-width:500px){
-       main{
-        .bg-elements {
-            min-height: 780px;
-        }
-           #reklam{
-               .container{
-                   .row{
-                       .logo-area{
-                           align-items: center;
-                           justify-content: center;
-                           display: flex;
-                    .logo{
-                        padding: 0 10px;
-                        margin-bottom: 25px;
-                       max-width:100% ;
-                       height: 20px;
+
+        @media only screen and (max-width:500px) {
+            main {
+                .bg-elements {
+                    min-height: 780px;
+                }
+
+                #reklam {
+                    .container {
+                        .row {
+                            .logo-area {
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+
+                                .logo {
+                                    padding: 0 10px;
+                                    margin-bottom: 25px;
+                                    max-width: 100%;
+                                    height: 20px;
+                                }
+                            }
+                        }
                     }
                 }
-                   }
-               }
-           }
-           #comment{
-               .coment-container{
-                   h2{
-                       font-size: 26px;
-                   }
-                   .row{
-                       .coment{
-                           width: 90%;
-                           p{
-                               margin: 25px 0;
-                           }
-                           .star{
-                               white-space: nowrap;
-                           }
-                           .coment-flex{
-                               padding: 20px 13px;
-                               .flex-div{
-                                   .app{
-                                       white-space: nowrap;
-                                   }
-                               }
-                           }
-                       }
-                   }
-               }
-           }
-          #acardion{
-              padding-top: 50px;
-              .container{
-                  .row{
-                      .left-item{
-                          img{
-                              width: 100%;
-                          }
-                      }
-                  }
-              }
-          }
-          #emergency{
-              .container{
-                  .row{
-                      .emer-right{
-                          justify-content: center;
-                          img{
-                              height: 560px;
-                              width: 100%;
-                          }
-                      }
-                  }
-              }
-          }
-          #last{
-              .container{
-                  .row{
-                          .btn-flex{
-                            display: grid;
-                            a{
-                                margin: 10px 0;
+
+                #comment {
+                    .coment-container {
+                        h2 {
+                            font-size: 26px;
+                        }
+
+                        .row {
+                            .coment {
+                                width: 90%;
+
+                                p {
+                                    margin: 25px 0;
+                                }
+
+                                .star {
+                                    white-space: nowrap;
+                                }
+
+                                .coment-flex {
+                                    padding: 20px 13px;
+
+                                    .flex-div {
+                                        .app {
+                                            white-space: nowrap;
+                                        }
+                                    }
+                                }
                             }
-                          }
-                      
-                  }
-              }
-          }
-          #banner{
-              .container{
-                  .row{
-                      .banner-left{
-                          span{
-                              font-size: 14px;
-                          }
-                          h1{
-                              font-size: 27px;
-                          }
-                      }
-                      .banner-right{
-                          margin-top: 35px;
-                          .img{
-                              height: 250px;
-                          }
-                      }
-                  }
-              }
-          }
-       }
-       #footer{
-           padding-bottom: 15px;
-           .container{
-               .row1{
-                   flex-direction: column;
-                   .left{
-                       margin-bottom: 15px;
-                   }
-                   .right{
-                       .btn-flex{
-                           display: grid;
-                           a{
-                            margin: 10px 0;
-                           }
-                       }
-                   }
-               }
-           }
-       }
+                        }
+                    }
+                }
+
+                #acardion {
+                    padding-top: 50px;
+
+                    .container {
+                        .row {
+                            .left-item {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #emergency {
+                    .container {
+                        .row {
+                            .emer-right {
+                                justify-content: center;
+
+                                img {
+                                    height: 560px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #last {
+                    .container {
+                        .row {
+                            .btn-flex {
+                                display: grid;
+
+                                a {
+                                    margin: 10px 0;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                #banner {
+                    .container {
+                        .row {
+                            .banner-left {
+                                span {
+                                    font-size: 14px;
+                                }
+
+                                h1 {
+                                    font-size: 27px;
+                                }
+                            }
+
+                            .banner-right {
+                                margin-top: 35px;
+
+                                .img {
+                                    height: 250px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #footer {
+                padding-bottom: 15px;
+
+                .container {
+                    .row1 {
+                        flex-direction: column;
+
+                        .left {
+                            margin-bottom: 15px;
+                        }
+
+                        .right {
+                            .btn-flex {
+                                display: grid;
+
+                                a {
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
