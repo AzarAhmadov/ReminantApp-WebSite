@@ -1,6 +1,5 @@
 const acardion = document.querySelectorAll('.right-flex');
 const acardionLeft = document.querySelectorAll('.img');
-const ac = document.querySelector('.ac')[0];
 
 acardion.forEach((item) => {
     item.addEventListener("click", () => {
@@ -88,3 +87,39 @@ sr.reveal('.last-item', {
   distance: "100px",
   interval: 200
 })
+
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 0,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    140: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+
+const navLink = document.querySelectorAll('.nav-link');
+
+function deleteNavLink(){
+  mobil_list.classList.remove("active");
+}
+
+navLink.forEach((n) => n.addEventListener("click",  deleteNavLink));

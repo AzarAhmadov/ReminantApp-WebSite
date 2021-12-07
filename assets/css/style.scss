@@ -13,20 +13,41 @@
 // Color 
 $white:#fff;
 $black:#000;
-$spanColor:#1f2a82;
-$spanBack:#dbe2fc;
+$spanColor:#c05693;
+$spanBack:#ffd5ed;
 $h2Color:#30364d;
 $linkCOlor:#182553;
-$backColor:#e6e8f0;
 $appBack:#e6e8f0;
 $rightContent:#798099;
 $h2two:#0f1340;
+$backColor:#e6e8f0;
 $darkOrange:darkorange;
-$linearback:linear-gradient(357deg, #0f1340 52%, #1f2a82);
+$linearback:linear-gradient(357deg, #de5472 52%, $spanColor);
 $bLeft:rgba(255, 255, 255, .4);
 $hoverAcardion:rgba(128, 0, 128, 0);
 $emerBtn:rgba(15, 19, 64, .05);
 $boxShadow:rgba(0, 0, 0, 0.1);
+$footerTitle:#000;
+$footerList:rgba(0, 0, 0, .5);
+$footerItem:rgba(0, 0, 0, .5);
+$hktitleh2:#fff;
+$hkcontent:#fff;
+$cardName:#000;
+$cardAlt:rgba(0, 0, 0, .5);
+$swiperBack:#c05693;
+
+.tawk-text-bold {
+    display: none !important;
+}
+
+.swiper-pagination-bullet-active{
+background:$swiperBack !important;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
 
 .span {
     font-weight: bold;
@@ -79,12 +100,19 @@ html {
 
                     .header-left {
                         display: flex;
-                        align-items: flex-end;
+                        align-items: center;
+                        height: 100%;
 
                         .header-link {
                             color: $white;
                             font-size: 20px;
                             margin-right: 60px;
+                            height: 100%;
+
+                            img {
+                                padding: 10px;
+                                height: 100%;
+                            }
                         }
 
                         nav {
@@ -125,6 +153,187 @@ html {
         }
 
         main {
+            .background-blue {
+                background: $linearback;
+                width: 100%;
+                height: 450px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                transform: translateY(-90px);
+                position: relative;
+                z-index: -1;
+
+                .row {
+                    padding-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .hk-title {
+                        color: $hktitleh2;
+                        font-size: 40px;
+                    }
+
+                    .hk-content {
+                        margin-top: 10px;
+                        font-size: 18px;
+                        color: $hkcontent;
+                    }
+                }
+
+                .hk-abs-svg {
+                    width: 100%;
+                    position: absolute;
+                    bottom: -4px;
+                }
+            }
+
+            #about {
+                .about-container {
+                    max-width: 1300px;
+                    margin: 0 auto;
+
+                    .about-center {
+                        text-align: center;
+                    }
+
+                    h3 {
+                        font-size: 30px;
+                        color: $linkCOlor;
+                    }
+
+                    .row {
+                        margin-top: 60px;
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+
+                        .about-card {
+                            margin-bottom: 50px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            img {
+                                width: 150px;
+                                height: 150px;
+                                border-radius: 50%;
+                            }
+
+                            .about-name {
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+
+                                .Name {
+                                    color: $cardName;
+                                    font-size: 20px;
+                                    margin-top: 10px;
+                                    font-weight: bold;
+                                    margin-bottom: 5px;
+                                }
+
+                                .Name-alt {
+                                    color: $cardAlt;
+                                    font-weight: bold;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #about-alt {
+                margin-top: 100px;
+
+                .container {
+                    h3 {
+                        text-align: center;
+                        font-size: 30px;
+                        color: $linkCOlor;
+                        margin-bottom: 50px;
+                    }
+
+                    .row {
+                        display: flex;
+                        align-items: flex-start;
+
+                        .b-left {
+                            width: 40%;
+                            margin-right: 90px;
+
+                            img {
+                                height: 100%;
+                                border-radius: 10px;
+                                width: 100%;
+                            }
+                        }
+
+                        .b-right {
+                            flex: 1;
+                            display: flex;
+                            align-self: center;
+                            flex-direction: column;
+
+                            .right-flex {
+                                display: flex;
+                                margin-bottom: 40px;
+
+                                img {
+                                    max-width: 60px;
+                                    margin-right: 20px;
+                                }
+
+                                span {
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    margin-bottom: 5px;
+                                    display: block;
+                                    color: $linkCOlor;
+                                }
+
+                                p {
+                                    width: 90%;
+                                    font-weight: bold;
+                                    color: $cardAlt;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #reklam2 {
+                margin-top: 150px;
+
+                .container {
+                    h3 {
+                        text-align: center;
+                        font-size: 30px;
+                        color: $linkCOlor;
+                        font-weight: bold;
+                        margin-bottom: 50px;
+                    }
+
+                    .row {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+
+                        .reklam-item {
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 35px;
+
+                            img {
+                                height: 100%;
+                                width: 230px;
+                            }
+                        }
+                    }
+                }
+            }
+
             .mobil-menu {
                 .mobil-container {
                     nav {
@@ -163,6 +372,7 @@ html {
                     }
                 }
             }
+
             .bg-elements {
                 background-image: $linearback;
                 position: absolute;
@@ -178,7 +388,7 @@ html {
                     bottom: -4px;
                     width: 100%;
 
-                    svg {
+                    img {
                         height: 100%;
                         width: 100%;
                     }
@@ -251,6 +461,7 @@ html {
 
             #reklam {
                 margin-top: 150px;
+
                 .container {
                     .title {
                         margin: 0 auto;
@@ -531,34 +742,18 @@ html {
                 }
 
                 .img-top-abs {
-                    img {
+                    svg {
                         width: 100%;
-                        background-size: cover;
                         position: absolute;
-                        top: -59px;
-                        height: 50px;
-                        z-index: 100000;
-                    }
-                }
-
-                .img-top-abs {
-                    position: absolute;
-                    top: 59px;
-                    width: 100%;
-
-                    img {
+                        top: 0;
                         height: 4vw;
                     }
                 }
 
                 .img-bottom-abs {
                     position: absolute;
-                    bottom: -10px;
+                    bottom: -4px;
                     width: 100%;
-
-                    img {
-                        width: 100%;
-                    }
                 }
             }
 
@@ -709,8 +904,19 @@ html {
             }
         }
 
+        .footer {
+            padding-top: 70px;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+
         #footer {
             margin-top: 80px;
+
+            .footer-logo {
+                img {
+                    height: 25px;
+                }
+            }
 
             .container {
                 .row1 {
@@ -722,6 +928,18 @@ html {
                         a {
                             color: $black;
                             font-size: 30px;
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                margin-right: 10px;
+                                width: 35px;
+                                height: 35px;
+                            }
+
+                            span {
+                                color: $black;
+                            }
                         }
                     }
 
@@ -736,12 +954,12 @@ html {
 
                 .row2 {
                     margin-top: 50px;
-                    padding-right: 100px;
+                    padding-right: 200px;
                     display: flex;
                     justify-content: space-between;
 
                     .footer-item {
-                        color: $black;
+                        color: $footerItem;
 
                         p {
                             margin-bottom: 20px;
@@ -761,7 +979,7 @@ html {
 
                     .footer-list {
                         .footer-title {
-                            color: $black;
+                            color: $footerTitle;
                             font-size: 20px;
                             margin-bottom: 25px;
                         }
@@ -772,7 +990,7 @@ html {
 
                                 a {
                                     font-weight: bold;
-                                    color: $black;
+                                    color: $footerList;
                                 }
                             }
                         }
@@ -800,6 +1018,22 @@ html {
             }
 
             main {
+                #reklam2 {
+                    .container {
+                        .row {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                }
+
+                #about {
+                    .about-container {
+                        .row {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                    }
+                }
+
                 .bg-elements {
                     min-height: 880px;
                 }
@@ -895,7 +1129,43 @@ html {
                         flex-direction: column !important;
 
                         .footer-list {
-                            margin-top: 25px;
+                            margin-top: 35px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            main {
+                #about-alt {
+                    margin-top: 20px;
+
+                    .container {
+                        .row {
+                            flex-direction: column;
+                            align-items: center;
+
+                            .b-left {
+                                margin: 0;
+                                width: 95%;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .b-right {
+                                margin-top: 20px;
+                                justify-content: center;
+                                width: 90%;
+
+                                .right-flex {
+                                    p {
+                                        width: 100%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -903,7 +1173,36 @@ html {
         }
 
         @media only screen and (max-width:500px) {
+
             main {
+                .background-blue{
+                    height: 400px;
+                    .hk-abs-svg{
+                        bottom: -5px;
+                    }
+                }
+                #reklam2{
+                    margin-top:0;
+                }
+                #about {
+                    margin-top: -80px;
+                    .about-container {
+                        .row {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                }
+
+                #app {
+                    .container {
+                        .row {
+                            .app-top-img {
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+                }
+
                 .bg-elements {
                     min-height: 780px;
                 }
