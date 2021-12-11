@@ -1358,6 +1358,68 @@ html body main .last-post .container .row .sidebar .sidebar-item i.yt {
   background-color: #f50000;
 }
 
+html body main .sual .about-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+html body main .sual .container .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main .sual .container .row .sual-item {
+  cursor: pointer;
+  padding: 20px 10px;
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #c05693;
+  border-radius: 8px;
+}
+
+html body main .sual .container .row .sual-item.active {
+  background: #f8a9d6;
+}
+
+html body main .sual .container .row .sual-item h6 {
+  font-size: 20px;
+}
+
+html body main .sual .container .row .sual-item .sual-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main .sual .container .row .sual-item .sual-flex i {
+  font-size: 30px;
+}
+
+html body main .sual .container .row .sual-item .sual-content {
+  display: none;
+  margin-top: 15px;
+}
+
+html body main .sual .container .row .sual-item .sual-content.active {
+  display: block;
+}
+
+html body main .sual .container .row .sual-item .sual-content p {
+  font-weight: bold;
+  line-height: 25px;
+}
+
 html body .footer {
   padding-top: 70px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -1695,6 +1757,9 @@ html body #footer .footer-bottom span {
 }
 
 @media only screen and (max-width: 600px) {
+  html body main .sual {
+    margin-top: -80px;
+  }
   html body main .blog {
     margin-top: -80px;
   }

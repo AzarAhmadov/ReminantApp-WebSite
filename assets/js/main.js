@@ -1,3 +1,15 @@
+const sualItem = document.querySelectorAll('.sual-item');
+const sIcon = document.querySelectorAll('.s-icon');
+const sualContent = document.querySelectorAll('.sual-content')
+
+for (let i = 0 ; i<sualItem.length ; i++){
+  sualItem[i].addEventListener('click', () => {
+    sualContent[i].classList.toggle('active');
+    sIcon[i].classList.toggle('bx-x')
+    sualItem[i].classList.toggle('active')
+  })
+}
+
 const acardion = document.querySelectorAll('.right-flex');
 const acardionLeft = document.querySelectorAll('.img');
 
