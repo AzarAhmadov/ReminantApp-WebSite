@@ -432,6 +432,43 @@ html {
                 }
             }
 
+            .sosial-area {
+                margin-top: -30px;
+                margin-bottom: 70px;
+                overflow: hidden;
+
+                .container {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        margin-right: 25px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        i {
+                            border: 1px dotted #dd277b;
+                            font-size: 30px;
+                            background: #dd277b;
+                            border-radius: 50%;
+                            color: #fff;
+                            padding: 12px;
+                            transition: 300ms all;
+
+                            &:hover {
+                                border: 1px dotted #dd277b;
+                                color: #000;
+                                background: transparent;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
             #banner {
                 padding-top: 60px;
 
@@ -1365,7 +1402,7 @@ html {
 
             .footer-bottom {
                 text-align: center;
-                margin-top: 100px;
+                margin-top: 70px;
 
                 span {
                     font-size: 15px;

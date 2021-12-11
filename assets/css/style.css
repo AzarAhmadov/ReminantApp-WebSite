@@ -473,6 +473,46 @@ html body main .bg-elements .bottom img {
   width: 100%;
 }
 
+html body main .sosial-area {
+  margin-top: -30px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+html body main .sosial-area .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body main .sosial-area .container a {
+  margin-right: 25px;
+}
+
+html body main .sosial-area .container a:last-child {
+  margin-right: 0;
+}
+
+html body main .sosial-area .container a i {
+  border: 1px dotted #dd277b;
+  font-size: 30px;
+  background: #dd277b;
+  border-radius: 50%;
+  color: #fff;
+  padding: 12px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+html body main .sosial-area .container a i:hover {
+  border: 1px dotted #dd277b;
+  color: #000;
+  background: transparent;
+}
+
 html body main #banner {
   padding-top: 60px;
 }
@@ -1515,7 +1555,7 @@ html body #footer .container .row2 .footer-list ul li a {
 
 html body #footer .footer-bottom {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 html body #footer .footer-bottom span {
