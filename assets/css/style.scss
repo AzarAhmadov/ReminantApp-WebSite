@@ -1381,7 +1381,7 @@ html {
             }
         }
 
-        @media only screen and (max-width:992px) {
+        @media only screen and (max-width:1024px) {
             .open-btn {
                 display: block;
             }
@@ -1631,6 +1631,14 @@ html {
 
         @media only screen and (max-width:600px) {
             main {
+                .blog-content {
+                    bottom: 25px !important;
+
+                    p {
+                        width: 90%;
+                    }
+                }
+
                 .blog {
                     .container {
                         .row {
@@ -1643,6 +1651,11 @@ html {
                                 margin-left: auto;
                                 margin-right: auto;
 
+                                .blog-content {
+                                    left: 40px;
+                                }
+
+
                                 a {
                                     width: 90%;
 
@@ -1650,15 +1663,6 @@ html {
 
                                         height: 320px !important;
 
-                                    }
-                                }
-
-
-                                .blog-content {
-                                    left: 40px;
-
-                                    p {
-                                        width: 90%;
                                     }
                                 }
                             }
