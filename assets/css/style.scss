@@ -1212,46 +1212,56 @@ html {
                     }
                 }
             }
+
             .sual {
-                .about-title{
+                .about-title {
                     text-align: center;
                     margin-bottom: 50px;
                 }
-                .container{
-                    .row{
+
+                .container {
+                    .row {
                         flex-direction: column;
                         align-items: center;
-                        .sual-item{
+
+                        .sual-item {
                             cursor: pointer;
                             padding: 20px 10px;
                             width: 90%;
                             margin: 20px auto;
                             border: 1px solid $spanColor;
                             border-radius: 8px;
-                           &.active{
+
+                            &.active {
                                 background: $cardBack;
-                           }
-                            h6{
+                            }
+
+                            h6 {
                                 font-size: 20px;
                             }
-                            .sual-flex{
+
+                            .sual-flex {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                i{
+
+                                i {
                                     font-size: 30px;
                                 }
                             }
-                            .sual-content{
+
+                            .sual-content {
                                 display: none;
                                 margin-top: 15px;
-                                &.active{
+
+                                &.active {
                                     display: block;
                                 }
-                                p{
-                                font-weight: bold;
-                                line-height: 25px;
-                            }
+
+                                p {
+                                    font-weight: bold;
+                                    line-height: 25px;
+                                }
                             }
                         }
                     }
@@ -1675,12 +1685,14 @@ html {
 
         @media only screen and (max-width:600px) {
             main {
-                .sual{
-                     margin-top: -80px;
+                .sual {
+                    margin-top: -80px;
                 }
-                .blog{
-                margin-top: -80px;
+
+                .blog {
+                    margin-top: -80px;
                 }
+
                 .blog-content {
                     bottom: 25px !important;
 

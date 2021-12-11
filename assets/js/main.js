@@ -2,7 +2,7 @@ const sualItem = document.querySelectorAll('.sual-item');
 const sIcon = document.querySelectorAll('.s-icon');
 const sualContent = document.querySelectorAll('.sual-content')
 
-for (let i = 0 ; i<sualItem.length ; i++){
+for (let i = 0; i < sualItem.length; i++) {
   sualItem[i].addEventListener('click', () => {
     sualContent[i].classList.toggle('active');
     sIcon[i].classList.toggle('bx-x')
@@ -14,20 +14,20 @@ const acardion = document.querySelectorAll('.right-flex');
 const acardionLeft = document.querySelectorAll('.img');
 
 acardion.forEach((item) => {
-    item.addEventListener("click", () => {
-      document.querySelector(".right-flex.active").classList.remove("active");
-      item.classList.add("active");
-    });
+  item.addEventListener("click", () => {
+    document.querySelector(".right-flex.active").classList.remove("active");
+    item.classList.add("active");
   });
-
-  const open_bar = document.querySelector('.open-btn');
-  const mobil_list = document.querySelector('.listMobil');
-  const Body = document.querySelector('#body');
-  open_bar.addEventListener('click', () => {
-    mobil_list.classList.toggle('active');
-    Body.classList.toggle('active');
 });
-  
+
+const open_bar = document.querySelector('.open-btn');
+const mobil_list = document.querySelector('.listMobil');
+const Body = document.querySelector('#body');
+open_bar.addEventListener('click', () => {
+  mobil_list.classList.toggle('active');
+  Body.classList.toggle('active');
+});
+
 
 window.sr = new ScrollReveal()
 ScrollReveal({
@@ -80,7 +80,7 @@ sr.reveal('.emer-left', {
 })
 
 sr.reveal('.emer-right', {
-  duration:1500
+  duration: 1500
 })
 
 sr.reveal('.card-flex', {
@@ -89,13 +89,13 @@ sr.reveal('.card-flex', {
 })
 
 sr.reveal('.coment', {
-  origin:"top",
+  origin: "top",
   distance: "100px",
   interval: 200
 })
 
 sr.reveal('.last-item', {
-  origin:"top",
+  origin: "top",
   distance: "100px",
   interval: 200
 })
@@ -130,8 +130,8 @@ const swiper = new Swiper(".mySwiper", {
 
 const navLink = document.querySelectorAll('.nav-link');
 
-function deleteNavLink(){
+function deleteNavLink() {
   mobil_list.classList.remove("active");
 }
 
-navLink.forEach((n) => n.addEventListener("click",  deleteNavLink));
+navLink.forEach((n) => n.addEventListener("click", deleteNavLink));
