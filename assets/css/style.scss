@@ -1631,6 +1631,9 @@ html {
 
         @media only screen and (max-width:600px) {
             main {
+                .blog{
+                margin-top: -80px;
+                }
                 .blog-content {
                     bottom: 25px !important;
 

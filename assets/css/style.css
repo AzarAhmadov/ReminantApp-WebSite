@@ -1695,6 +1695,9 @@ html body #footer .footer-bottom span {
 }
 
 @media only screen and (max-width: 600px) {
+  html body main .blog {
+    margin-top: -80px;
+  }
   html body main .blog-content {
     bottom: 25px !important;
   }
