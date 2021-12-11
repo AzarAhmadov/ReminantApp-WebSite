@@ -47,11 +47,61 @@
   text-transform: uppercase;
 }
 
+.top-btn {
+  color: #fff;
+  background: #c05693;
+  padding: 5px 10px;
+  border-radius: 13px;
+}
+
+.about-title {
+  font-size: 30px;
+  color: #182553;
+}
+
 .open-btn {
   font-size: 26px;
   color: #fff;
   margin-left: 10px;
   display: none;
+}
+
+.top-b {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-b div {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-b i {
+  font-size: 30px;
+}
+
+.top-b span {
+  font-size: 25px;
+  color: #000;
+  font-weight: bold;
+}
+
+.top-b a {
+  font-weight: bold;
+  color: #000;
+  font-size: 19px;
 }
 
 .container {
@@ -197,11 +247,6 @@ html body main #about .about-container {
 
 html body main #about .about-container .about-center {
   text-align: center;
-}
-
-html body main #about .about-container h3 {
-  font-size: 30px;
-  color: #182553;
 }
 
 html body main #about .about-container .row {
@@ -1005,6 +1050,314 @@ html body main #last .img-abs-last img {
   width: 100%;
 }
 
+html body main .blog {
+  margin-top: -40px;
+}
+
+html body main .blog .container h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+html body main .blog .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main .blog .container .row .average {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+html body main .blog .container .row .average img {
+  width: 510px;
+  height: 440px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+html body main .blog .container .row .average .blog-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+html body main .blog .container .row .average .blog-content p {
+  margin: 15px 0 10px;
+  color: #fff;
+}
+
+html body main .blog .container .row .average .blog-content .time {
+  color: #000;
+  font-weight: bold;
+}
+
+html body main .blog .container .row .left {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+html body main .blog .container .row .left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 320px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+html body main .blog .container .row .left .left-abs1 {
+  position: relative;
+}
+
+html body main .blog .container .row .left .left-abs1 .blog-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+html body main .blog .container .row .left .left-abs1 .blog-content .top-btn {
+  color: #fff;
+  background: #c05693;
+  padding: 5px 10px;
+  border-radius: 13px;
+}
+
+html body main .blog .container .row .left .left-abs1 .blog-content p {
+  margin: 15px 0 10px;
+  color: #fff;
+}
+
+html body main .blog .container .row .left .left-abs1 .blog-content .time {
+  color: #000;
+  font-weight: bold;
+}
+
+html body main .blog .container .row .right {
+  border-radius: 10px;
+}
+
+html body main .blog .container .row .right img {
+  overflow: hidden;
+  margin-top: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 320px;
+  border-radius: 10px;
+}
+
+html body main .blog .container .row .right .left-abs1 {
+  position: relative;
+}
+
+html body main .blog .container .row .right .left-abs1 .blog-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+html body main .blog .container .row .right .left-abs1 .blog-content .top-btn {
+  color: #fff;
+  background: #c05693;
+  padding: 5px 10px;
+  border-radius: 13px;
+}
+
+html body main .blog .container .row .right .left-abs1 .blog-content p {
+  margin: 15px 0 10px;
+  color: #fff;
+}
+
+html body main .blog .container .row .right .left-abs1 .blog-content .time {
+  color: #000;
+  font-weight: bold;
+}
+
+html body main .blog-card .container .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+html body main .blog-card .container .row .card-item-blog {
+  margin-right: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f8a9d6;
+  width: 275px;
+  height: 415px;
+}
+
+html body main .blog-card .container .row .card-item-blog:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  height: 220px;
+}
+
+html body main .blog-card .container .row .card-item-blog:last-child {
+  margin-right: 0;
+}
+
+html body main .blog-card .container .row .card-item-blog img {
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  width: 100%;
+  max-height: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+html body main .blog-card .container .row .card-item-blog .blog-card-content {
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+html body main .blog-card .container .row .card-item-blog .blog-card-content p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+html body main .last-post .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html body main .last-post .container .row .post-left {
+  width: 80%;
+}
+
+html body main .last-post .container .row .post-left .post-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body main .last-post .container .row .post-left .post-item .last-post-content {
+  margin-left: 10px;
+}
+
+html body main .last-post .container .row .post-left .post-item .last-post-content .title-posts {
+  margin-bottom: 10px;
+  display: block;
+  color: #000;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+html body main .last-post .container .row .post-left .post-item .last-post-content .time {
+  margin-top: 10px;
+  display: block;
+}
+
+html body main .last-post .container .row .post-left .post-item img {
+  border-radius: 13px;
+  margin-top: 0;
+  width: 290px;
+}
+
+html body main .last-post .container .row .sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-left: 20px;
+  top: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+html body main .last-post .container .row .sidebar .sidebar-item {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body main .last-post .container .row .sidebar .sidebar-item i {
+  padding: 2px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 35px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+}
+
+html body main .last-post .container .row .sidebar .sidebar-item i.fb {
+  background-color: #3b5999;
+}
+
+html body main .last-post .container .row .sidebar .sidebar-item i.wp {
+  background-color: #3fbb50;
+}
+
+html body main .last-post .container .row .sidebar .sidebar-item i.ins {
+  background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+html body main .last-post .container .row .sidebar .sidebar-item i.yt {
+  background-color: #f50000;
+}
+
 html body .footer {
   padding-top: 70px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -1109,9 +1462,117 @@ html body #footer .footer-bottom span {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-width: 1200px) {
+  html body main .blog-card .container .row {
+    place-items: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  html body main .blog-card .container .row .card-item-blog {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  html body main .blog .container .row .average {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body main .blog .container .row .average img {
+    max-width: 420px !important;
+    height: 420px !important;
+  }
+  html body main .blog .container .row .left img {
+    width: 300px !important;
+  }
+  html body main .blog .container .row .right img {
+    width: 300px !important;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   html body .open-btn {
     display: block;
+  }
+  html body main .last-post .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body main .last-post .container .row .post-left {
+    width: 100%;
+  }
+  html body main .last-post .container .row .sidebar {
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body main .blog .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  html body main .blog .container .row .average {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body main .blog .container .row .average img {
+    max-width: 100% !important;
+    height: 420px !important;
+  }
+  html body main .blog .container .row .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body main .blog .container .row .left .left-abs1 a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main .blog .container .row .left .left-abs1 .blog-content {
+    left: 40px !important;
+  }
+  html body main .blog .container .row .left img {
+    width: 90% !important;
+  }
+  html body main .blog .container .row .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body main .blog .container .row .right .left-abs1 a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main .blog .container .row .right .left-abs1 .blog-content {
+    left: 40px !important;
+  }
+  html body main .blog .container .row .right img {
+    width: 90% !important;
   }
   html body main #reklam2 .container .row {
     -ms-grid-columns: (1fr)[2];
@@ -1230,6 +1691,80 @@ html body #footer .footer-bottom span {
   }
   html body main #about-alt .container .row .b-right .right-flex p {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html body main .blog .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  html body main .blog .container .row .average {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body main .blog .container .row .average a {
+    width: 90%;
+  }
+  html body main .blog .container .row .average a img {
+    height: 320px !important;
+  }
+  html body main .blog .container .row .average .blog-content {
+    left: 40px;
+  }
+  html body main .blog .container .row .average .blog-content p {
+    width: 90%;
+  }
+  html body main .blog .container .row .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body main .blog .container .row .left .left-abs1 {
+    margin-bottom: 10px;
+  }
+  html body main .blog .container .row .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body main .blog .container .row .right .left-abs1 {
+    margin-bottom: 15px;
+  }
+  html body main .blog .container .row .average {
+    margin: 10px auto;
+  }
+  html body main .blog .container .row .average .left-abs1 {
+    margin-bottom: 15px;
+  }
+  html body main .blog-card .container .row {
+    place-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  html body main .blog-card .container .row .card-item-blog {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  html body main .last-post .container .row .post-item {
+    padding: 20px 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  html body main .last-post .container .row .post-item .last-post-content {
+    margin-top: 30px;
   }
 }
 
