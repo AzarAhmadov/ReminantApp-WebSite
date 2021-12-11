@@ -11,7 +11,7 @@ for (let i = 0; i < sualItem.length; i++) {
 }
 
 const acardion = document.querySelectorAll('.right-flex');
-const acardionLeft = document.querySelectorAll('.img');
+const leftimgitem = document.querySelectorAll('.left-img-item');
 
 acardion.forEach((item) => {
   item.addEventListener("click", () => {
@@ -19,6 +19,13 @@ acardion.forEach((item) => {
     item.classList.add("active");
   });
 });
+
+for (let i = 0 ; i<acardion.length ; i++){
+  acardion[i].addEventListener('click', () => {
+    document.querySelector('.left-img-item.active').classList.remove('active')
+    leftimgitem[i].classList.add('active')
+  })
+}
 
 const open_bar = document.querySelector('.open-btn');
 const mobil_list = document.querySelector('.listMobil');

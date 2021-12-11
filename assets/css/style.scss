@@ -631,8 +631,16 @@ html {
 
                     .left-item {
 
-                        img {
-                            width: 460px;
+                        .left-img-item {
+                            display: none;
+
+                            img {
+                                width: 460px;
+                            }
+
+                            &.active {
+                                display: block;
+                            }
                         }
                     }
 
@@ -1825,6 +1833,21 @@ html {
                                     margin-top: 30px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+
+            #acardion {
+                .container {
+                    .row {
+                        .right-flex {
+                            padding-bottom: 20px;
+
+                        }
+
+                        .left-item {
+                            margin-top: 35px;
                         }
                     }
                 }

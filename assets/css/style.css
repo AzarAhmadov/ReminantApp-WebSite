@@ -686,8 +686,16 @@ html body main #acardion .row {
           align-items: center;
 }
 
-html body main #acardion .row .left-item img {
+html body main #acardion .row .left-item .left-img-item {
+  display: none;
+}
+
+html body main #acardion .row .left-item .left-img-item img {
   width: 460px;
+}
+
+html body main #acardion .row .left-item .left-img-item.active {
+  display: block;
 }
 
 html body main #acardion .row .right-item .right-flex {
@@ -1876,6 +1884,12 @@ html body #footer .footer-bottom span {
   }
   html body main .last-post .container .row .post-item .last-post-content {
     margin-top: 30px;
+  }
+  html body #acardion .container .row .right-flex {
+    padding-bottom: 20px;
+  }
+  html body #acardion .container .row .left-item {
+    margin-top: 35px;
   }
 }
 
