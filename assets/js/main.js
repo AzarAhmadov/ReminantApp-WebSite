@@ -1,3 +1,36 @@
+window.state = {
+  downloadLinks: {
+    android: "./android",
+    ios: "./ios"
+  },
+  sosicalLinks:{
+    instagram:"https://www.instagram.com/reminantbaku/",
+    facebook:"https://www.facebook.com/profile.php?id=100076146334062"
+  }
+}
+
+window.__proto__.getOS = function () {
+  var userAgent = window.navigator.userAgent,
+    platform = window.navigator.platform,
+    macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+    windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+    iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+    os = null;
+
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = 'mac_s';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = 'ios';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = 'windows';
+  } else if (/Android/.test(userAgent)) {
+    os = 'android';
+  } else if (!os && /Linux/.test(platform)) {
+    os = 'linux';
+  }
+
+  return os;
+}
 const sualItem = document.querySelectorAll('.sual-item');
 const sIcon = document.querySelectorAll('.s-icon');
 const sualContent = document.querySelectorAll('.sual-content')
@@ -5,7 +38,6 @@ const sualContent = document.querySelectorAll('.sual-content')
 for (let i = 0; i < sualItem.length; i++) {
   sualItem[i].addEventListener('click', () => {
     sualContent[i].classList.toggle('active');
-    sIcon[i].classList.toggle('bx-x')
     sualItem[i].classList.toggle('active')
   })
 }
@@ -20,7 +52,7 @@ acardion.forEach((item) => {
   });
 });
 
-for (let i = 0 ; i<acardion.length ; i++){
+for (let i = 0; i < acardion.length; i++) {
   acardion[i].addEventListener('click', () => {
     document.querySelector('.left-img-item.active').classList.remove('active')
     leftimgitem[i].classList.add('active')
@@ -34,106 +66,6 @@ open_bar.addEventListener('click', () => {
   mobil_list.classList.toggle('active');
   Body.classList.toggle('active');
 });
-
-
-window.sr = new ScrollReveal()
-ScrollReveal({
-  reset: false
-});
-
-sr.reveal('.banner-left', {
-  origin: "top",
-  distance: "-300px",
-  delay: 400
-})
-
-sr.reveal('.banner-right', {
-  origin: "bottom",
-  distance: "-300px",
-  delay: 400
-})
-
-sr.reveal('.logo', {
-  scale: 0.8,
-  interval: 200
-})
-
-sr.reveal('.app-top-img', {
-  origin: "left",
-  distance: "300px",
-  delay: 400
-})
-
-sr.reveal('.span', {
-  origin: "top",
-  distance: "200px",
-  delay: 400
-})
-
-sr.reveal('.anime', {
-  origin: "top",
-  distance: "200px",
-  delay: 400
-})
-
-sr.reveal('.right-item', {
-  origin: "left",
-  distance: "200px",
-  delay: 400
-})
-
-sr.reveal('.emer-left', {
-  duration: 1500
-})
-
-sr.reveal('.emer-right', {
-  duration: 1500
-})
-
-sr.reveal('.card-flex', {
-  scale: 0.8,
-  interval: 200
-})
-
-sr.reveal('.coment', {
-  origin: "top",
-  distance: "100px",
-  interval: 200
-})
-
-sr.reveal('.last-item', {
-  origin: "top",
-  distance: "100px",
-  interval: 200
-})
-
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 0,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    140: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  }
-});
-
 
 const navLink = document.querySelectorAll('.nav-link');
 

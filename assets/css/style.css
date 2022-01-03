@@ -738,7 +738,6 @@ html body main #acardion .row .right-item .right-flex .icon {
   font-size: 35px;
   border-radius: 50%;
   background: #c05693;
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,6 +749,7 @@ html body main #acardion .row .right-item .right-flex .icon {
           justify-content: center;
   width: 45px;
   height: 45px;
+  padding: 5px;
 }
 
 html body main #emergency {
@@ -827,6 +827,7 @@ html body main #emergency .container .row .emer-left .emer-btn {
           justify-content: center;
   font-weight: bold;
   font-size: 14px;
+  color: #000;
 }
 
 html body main #emergency .container .row .emer-right {
@@ -1450,8 +1451,9 @@ html body main .sual .container .row .sual-item .sual-flex {
           align-items: center;
 }
 
-html body main .sual .container .row .sual-item .sual-flex i {
-  font-size: 30px;
+html body main .sual .container .row .sual-item .sual-flex svg {
+  -webkit-transform: rotate(160);
+          transform: rotate(160);
 }
 
 html body main .sual .container .row .sual-item .sual-content {
@@ -1466,6 +1468,30 @@ html body main .sual .container .row .sual-item .sual-content.active {
 html body main .sual .container .row .sual-item .sual-content p {
   font-weight: bold;
   line-height: 25px;
+}
+
+html body main .istifade-content {
+  margin-top: -20px;
+}
+
+html body main .istifade-content .container span {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+html body main .istifade-content .container span h4 {
+  line-height: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #0f1340;
+  border-radius: 0 30%;
+  font-size: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+}
+
+html body main .istifade-content .container span a {
+  color: #c05693;
 }
 
 html body .footer {
@@ -1538,12 +1564,22 @@ html body #footer .container .row2 .footer-item p {
   font-size: 18px;
 }
 
-html body #footer .container .row2 .footer-item .btn-flex i {
-  border: 1px solid #000;
-  font-size: 20px;
-  padding: 5px;
+html body #footer .container .row2 .footer-item .btn-flex svg {
+  border: 1px solid rgba(0, 0, 0, 0.391);
+  font-size: 22px;
+  padding: 4px;
   margin-right: 5px;
   cursor: pointer;
+  border-radius: 11px;
+  color: #000;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+html body #footer .container .row2 .footer-item .btn-flex svg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: none;
 }
 
 html body #footer .container .row2 .footer-list .footer-title {

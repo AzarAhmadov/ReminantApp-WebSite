@@ -36,6 +36,7 @@ $cardName:#000;
 $cardAlt:rgba(0, 0, 0, .5);
 $swiperBack:#c05693;
 $cardBack:#f8a9d6;
+$sosialBorder:rgba(0, 0, 0, 0.391);
 
 .tawk-text-bold {
     display: none !important;
@@ -468,7 +469,6 @@ html {
                 }
             }
 
-
             #banner {
                 padding-top: 60px;
 
@@ -684,12 +684,12 @@ html {
                                 font-size: 35px;
                                 border-radius: 50%;
                                 background: $spanColor;
-                                color: $white;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 width: 45px;
                                 height: 45px;
+                                padding: 5px;
                             }
                         }
                     }
@@ -748,6 +748,7 @@ html {
                                 justify-content: center;
                                 font-weight: bold;
                                 font-size: 14px;
+                                color: $black;
                             }
                         }
 
@@ -1290,8 +1291,9 @@ html {
                                 justify-content: space-between;
                                 align-items: center;
 
-                                i {
-                                    font-size: 30px;
+                                svg {
+                                    transform: rotate(160);
+
                                 }
                             }
 
@@ -1308,6 +1310,32 @@ html {
                                     line-height: 25px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+
+            .istifade-content {
+                margin-top: -20px;
+
+                .container {
+                    span {
+                        font-size: 18px;
+                        line-height: 30px;
+
+                        h4 {
+                            line-height: 40px;
+                            margin-bottom: 15px;
+                            text-align: center;
+                            padding-bottom: 20px;
+                            color: $h2two;
+                            border-radius: 0 30%;
+                            font-size: 30px;
+                            border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+                        }
+
+                        a {
+                            color: $spanColor;
                         }
                     }
                 }
@@ -1377,12 +1405,20 @@ html {
                         }
 
                         .btn-flex {
-                            i {
-                                border: 1px solid $black;
-                                font-size: 20px;
-                                padding: 5px;
+                            svg {
+                                border: 1px solid $sosialBorder;
+                                font-size: 22px;
+                                padding: 4px;
                                 margin-right: 5px;
                                 cursor: pointer;
+                                border-radius: 11px;
+                                color: #000;
+                                transition: 400ms ease;
+
+                                &:hover {
+                                    transform: scale(1.1);
+                                    border: none;
+                                }
                             }
                         }
                     }
